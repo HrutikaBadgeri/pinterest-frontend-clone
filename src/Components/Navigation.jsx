@@ -115,7 +115,7 @@ function Navigation() {
               <Dropdown.Item>
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
-                  to={"/Settings"}
+                  to={"/Settings/PublicProfile"}
                 >
                   Settings
                 </Link>

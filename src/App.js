@@ -8,6 +8,7 @@ import CreatePin from "./Components/CreatePin";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import PublicProfile from "./Components/Settings/PublicProfile";
+import Personal_Information from "./Components/Settings/Personal_Information";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
         <Route exact path="CreatePin" element={<CreatePin />} />
         <Route exact path="Settings" element={<Settings />}>
           <Route exact path="PublicProfile" element={<PublicProfile />} />
+          <Route
+            exact
+            path="PersonalInformation"
+            element={<Personal_Information />}
+          />
         </Route>
       </Routes>
     </div>

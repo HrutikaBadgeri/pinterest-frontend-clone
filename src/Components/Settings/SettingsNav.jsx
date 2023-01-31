@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
-import "./SettingsNav.css";
 import { Link } from "react-router-dom";
 function SettingsNav() {
   const style = {
@@ -21,11 +20,9 @@ function SettingsNav() {
         className="flex-column"
       >
         <Nav.Link style={style}>
-          <p className="active">
-            {" "}
-            <Link to="/Settings/PublicProfile">Public Profile</Link>
-          </p>
+          <Link to="/Settings/PublicProfile">Public Profile</Link>
         </Nav.Link>
+
         <Nav.Link className="active" style={style}>
           <Link to="/Settings/PersonalInformation">Personal Information</Link>
         </Nav.Link>
