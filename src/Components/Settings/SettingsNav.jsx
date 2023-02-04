@@ -20,35 +20,59 @@ function SettingsNav() {
         className="flex-column"
       >
         <Nav.Link style={style}>
-          <Link to="/Settings/PublicProfile">Public Profile</Link>
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/PublicProfile"
+          >
+            Public Profile
+          </Link>
         </Nav.Link>
 
         <Nav.Link className="active" style={style}>
-          <Link to="/Settings/PersonalInformation">Personal Information</Link>
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/PersonalInformation"
+          >
+            Personal Information
+          </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
           Account Management
         </Nav.Link>
         <Nav.Link className="active" style={style}>
-          Tune your home feed
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/ClaimAccounts"
+          >
+            Claim Accounts
+          </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
-          Claimed Accounts
-        </Nav.Link>
-        <Nav.Link className="active" style={style}>
-          Social Permissions
-        </Nav.Link>
-        <Nav.Link className="active" style={style}>
-          Notifications
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/Notifications"
+          >
+            Notifications
+          </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
           Privacy and Data
         </Nav.Link>
         <Nav.Link className="active" style={style}>
-          Security and Logins
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/SecurityLogins"
+          >
+            Security and Logins
+          </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
-          Branded Content
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/BrandedContent"
+          >
+            Branded Content
+          </Link>
         </Nav.Link>
       </Nav>
     </div>

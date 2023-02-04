@@ -8,7 +8,11 @@ import CreatePin from "./Components/CreatePin";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import PublicProfile from "./Components/Settings/PublicProfile";
-import Personal_Information from "./Components/Settings/Personal_Information";
+import PersonalInformation from "./Components/Settings/PersonalInformation";
+import ClaimAccounts from "./Components/Settings/ClaimAccounts";
+import Notifications from "./Components/Settings/Notifications";
+import BrandedContent from "./Components/Settings/BrandedContent";
+import SecurityLogins from "./Components/Settings/SecurityLogins";
 
 function App() {
   return (
@@ -24,8 +28,12 @@ function App() {
           <Route
             exact
             path="PersonalInformation"
-            element={<Personal_Information />}
+            element={<PersonalInformation />}
           />
+          <Route exact path="ClaimAccounts" element={<ClaimAccounts />} />
+          <Route exact path="Notifications" element={<Notifications />} />
+          <Route exact path="BrandedContent" element={<BrandedContent />} />
+          <Route exact path="SecurityLogins" element={<SecurityLogins />} />
         </Route>
       </Routes>
     </div>
