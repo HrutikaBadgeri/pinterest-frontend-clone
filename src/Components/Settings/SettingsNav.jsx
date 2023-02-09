@@ -37,7 +37,12 @@ function SettingsNav() {
           </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
-          Account Management
+          <Link
+            style={{ color: "black", textDecoration: "none" }}
+            to="/Settings/AccountManagement"
+          >
+            Account Management
+          </Link>
         </Nav.Link>
         <Nav.Link className="active" style={style}>
           <Link

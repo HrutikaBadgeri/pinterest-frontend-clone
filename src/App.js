@@ -13,6 +13,7 @@ import ClaimAccounts from "./Components/Settings/ClaimAccounts";
 import Notifications from "./Components/Settings/Notifications";
 import BrandedContent from "./Components/Settings/BrandedContent";
 import SecurityLogins from "./Components/Settings/SecurityLogins";
+import AccountManagement from "./Components/Settings/AccountManagement";
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
           <Route exact path="Notifications" element={<Notifications />} />
           <Route exact path="BrandedContent" element={<BrandedContent />} />
           <Route exact path="SecurityLogins" element={<SecurityLogins />} />
+          <Route
+            exact
+            path="AccountManagement"
+            element={<AccountManagement />}
+          />
         </Route>
       </Routes>
     </div>

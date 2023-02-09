@@ -1,5 +1,6 @@
 import React from "react";
 
+import Button from "react-bootstrap/Button";
 function Notifications() {
   return (
     <div
@@ -18,7 +19,16 @@ function Notifications() {
         We'll always let you know about important changes, but you pick what
         else you want to hear about. Learn more
       </p>
-      <div></div>
+      <div style={{ display: "flex" }}>
+        <p>
+          {" "}
+          <b>On Pinterest</b> <br />
+          Pick which notifications to see while in the app or on the site.{" "}
+          <br />
+          <b>Learn more</b>
+          <Button>Edit</Button>
+        </p>
+      </div>
     </div>
   );
 }
